@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gray;
+    height: 300vh;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ul-nav{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 10rem;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+#home{
+    height: 100vh;
+    background-color: white;
+    background-repeat: none;
+}
+.home-title{
+    height: 100vh;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.expertise{
+    height: 100vh;
+    background-color: green;
+}
+.expertise-competences{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.expertise-tableau{
+    height: 200px;
+    width: 33%;
+    border: 2px solid black;
+}
+.tableau-head img{
+    height: 5vh;
+}
+#studies{
+    height: 100vh;
+    background-color: white;
+}
