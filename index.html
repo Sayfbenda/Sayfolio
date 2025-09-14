@@ -3,80 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stylesheet.css" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet"> 
     <title>Acceuil</title>
 </head>
 <body>
-    <header role="banner">
-        <section class="home">
+    <main>
+        <section id="home">
+            <header role="banner">
+        <section class="home" id="pagehome">
             <nav class="header-nav">
                 <div class="span-nav">
-                    <span>Soufiane</span>
+                    <span id="span-nav">Soufiane._</span>
                 </div>
                 <div class="li-nav">
                     <ul class="ul-nav">
-                        <li>home</li>
-                        <li>expertise</li>
-                        <li>studies</li>
-                        <li>hobbies</li>
-                        <li>contact</li>
+                        <li><a href="#pagehome">// home</a></li>
+                        <li><a href="#expertise">// expertise</a></li>
+                        <li><a href="#studies">// studies</a></li>
+                        <li><a href="#hobbies">// hobbies</a></li>
+                        <li><a href="#contact">// contact</a></li>
                     </ul>
                 </div>
+                <img class="bannerimg" src="content/img/logo.png">
             </nav>
         </section>
     </header>
-    <main>
-        <section id="home">
             <div class="home-title">
                 <h1>SOUFIANE</h1>
-                <p>THE BEST DEVELOPPER OF ALL TIME</p>
+                <p>THE BEST PORTFOLIO WEBSITE</p>
             </div>
         </section>
-        <section class="expertise">
+        <section class="expertise" id="expertise">
             <div class="expertise-title">
                 <h2>Mon Expertise</h2>
             </div>
             <div class="expertise-competences">
                 <article class="expertise-tableau">
                     <div class="tableau-head">
-                        <img src="icon.png" alt="">
-                        <span>Test</span>
+                        <img src="computericon.svg" alt="">
+                        <h3>Dev - WebSite</h3>
                     </div>
                     <div class="tableau-content">
-                        <p>Test zahduaz azjdia duha udhazuhdazidasqdqsdsqsqdqsdzio</p>
+                        <p>J'ai une bonne maîtreise des languages : Html, css et bientôt Javascript. J'ai en mon actif plusieurs projet personnels en HTML et CSS</p>
                     </div>
                 </article>
                 <article class="expertise-tableau">
                     <div class="tableau-head">
-                        <img src="icon.png" alt="">
-                        <span>Test</span>
+                        <img src="controllericon.svg" alt="">
+                        <h3>Dev - Lua programming</h3>
                     </div>
                     <div class="tableau-content">
-                        <p>Test zahduaz azjdia duha udhazuhdazidasqdqsdqsdqssqzio</p>
+                        <p>J'ai une petite maîtrise du langauge Lua qui est souuvent utilisé pour développer des scripts sur des jeux comme Five ou Nanos world (pas encore sortie)</p>
                     </div>
                 </article>
                 <article class="expertise-tableau">
                     <div class="tableau-head">
-                        <img src="icon.png" alt="">
-                        <span>Test</span>
+                        <img src="3dicon.svg" alt="">
+                        <h3>3D - Blender</h3>
                     </div>
                     <div class="tableau-content">
-                        <p>Test zahduaz azjdia duha udhazuhdasqdsqdsdqsdqsdqsdqzidazio</p>
+                        <p>J'ai une maîtrise moyenne en 3D notamment sur le logiciel Blender !</p>
                     </div>
                 </article>
             </div>
         </section>
-        <section class="studies">
+        <section class="studies" id="studies">
             <div class="studies-title">
-                <h2>My Studies</h2>
+            <h2>My Studies</h2>
             </div>
-            <article class="">
+            <div class="studies-content">
+            <div class="studies-bouttons">
+                <p>Filtré par :</p>
+                <button onclick="showDiv('div1')">// Bac</button>
+                <button onclick="showDiv('div2')">// BTS</button>
+                <button onclick="showDiv('div3')">// Suite</button>
+            </div>
+            <div id="div1" class="content visible">
+                <div class="content-group">
+                    <div class="all-content">
+                        <div id="bac1">
+                        </div>
+                        <div class="content-text">
+                                <h3>Bac - Jean Perrin</h3>
+                                <p>J'ai obtenu mon Bac Sti2d option SIN au lycée Jean Perrin à Rezé</p>
+                            </div>
+                    </div>
+                    <div class="all-content">
+                        <div id="bac2">
+                        </div>
+                        <div class="content-text">
+                                <h3>Voyage à Londres</h3>
+                                <p>Avec mon Lycée nous avons réalisé un voyage scolaire à Londres</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div id="div2" class="content">
+                <div class="all-content">
+                    <div id="bts1">
+                    </div>
+                    <div class="content-text">
+                            <h3>BTS SIO - La Colinière</h3>
+                            <p>Je suis actuellement ne plein formation de BTS Sio au lycée La colinière</p>
+                        </div>
+                </div>
+            </div>
+            <div id="div3" class="content">
+                <div class="all-content">
+                    <div id="suite1">
+                    </div>
+                    <div class="content-text">
+                            <h3>Licence Pro</h3>
+                            <p>Une poursuite d'étude en Licence pro me semble le choix le plus probable</p>
+                        </div>
+                </div>
+                <div class="all-content">
+                    <div id="suite2">
+                    </div>
+                    <div class="content-text">
+                            <h3>École d'ingénieur</h3>
+                            <p>Si je deviens fou</p>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="hobbies" id="hobbies">
+            <div class="hobbies-title">
+                <h2>My Hobbies</h2>
+            </div>
+            <div class="hobbies-content">
+                <article id="article1">
+                    <span>Film/Séries</span>
+                </article>
+                <article id="article2">
+                    <span>Programmation</span>
+                </article>
+                <article id="article3">
+                    <span>Musique</span>
+                </article>
+                <article id="article4">
+                    <span>Jeux Vidéo</span>
+                </article>
+                <article id="article5">
+                    <span>Anime/Manga</span>
+                </article>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contact-article">
+                <article class="contact-left">
+                    <h2>Contact</h2>
+                    <p>soufaine.bakouri.dev@gmail.com</p>
+                    <div class="contact-links">
+                        <a href="https://github.com/Sayfbenda" target="_blank">Github</a>
+                        <a href="https://www.linkedin.com/in/soufiane-bakouri-810874357" target="_blank">Linkdin</a>
+                        <a href="https://www.instagram.com/sf1nnn?igsh=MW15Mnl1bHZmcHRnbw%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+                    </div>
+                    <p>Je suis disponible pour toute idée qui peut me rendre milliardaire</p>
+                </article>
+                <article>
 
-            </article>
+                </article>
+                <article>
+
+                </article>
+            </div>
         </section>
     </main>
-    <footer>
-
-    </footer>
+    <script>
+    function showDiv(id) {
+      document.querySelectorAll(".content").forEach(div => div.classList.remove("visible"));
+      document.getElementById(id).classList.add("visible");
+    }
+  </script>
 </body>
 </html>

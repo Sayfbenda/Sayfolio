@@ -1,0 +1,311 @@
+@font-face {
+  font-family: poppins;
+  src: url(content/font/poppins.bold.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(content/font/RobotoMono-Medium.ttf);
+}
+html {
+      scroll-behavior: smooth;
+    }
+a{
+    text-decoration: none;
+}
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+body{
+    background-color: black;
+    height: 300vh;
+    cursor: url("mon-cursor.png"), auto;
+}
+.header-nav{
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#span-nav{
+    color: #fe0101;
+}
+.ul-nav{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+h1 {
+    margin: 0;
+    font-size: 10rem;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+#home{
+    height: 100vh;
+    background-image: url(content/img/homebg.png);
+    background-repeat: no-repeat;           
+    background-size: cover;                
+    background-position: center;            
+}
+.bannerimg{
+    height: 5vh;
+}
+.home-title{
+    color: white;
+    height: 100vh;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.expertise{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    background-image: url(content/img/expertiesbg.png);
+    background-repeat: no-repeat;           
+    background-size: cover;                
+    background-position: center; 
+}
+.expertise-competences{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.expertise-tableau{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+    height: 50vh;
+    width: 33%;
+    border: 2px solid white;
+}
+
+.expertise-title{
+    display: flex;
+    font-size: 5vh;
+    justify-content: center;
+}
+.tableau-head img{
+    height: 5vh;
+}
+.tableau-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vh;
+}
+.tableau-content{
+    display: flex;
+}
+.tableau-content p{
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
+.tableau-content img{
+    padding-left: 10%;
+    height: 100px;
+}
+.studies{
+    height: 100vh;
+    background-image: url(content/img/studiesbg.png);
+    background-repeat: no-repeat;         
+    background-size: cover;                
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+}
+.studies-title{
+    display: flex;
+    justify-content: center;
+}
+.content {
+      display: none;
+}
+.visible {
+    display: flex;
+    justify-content: center;
+    gap: 20vh;
+}
+#bac1{
+    background-image: url(content/img/jeanperrin.jpg);
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;  
+    background-position: center;  
+    background-size: cover; 
+    height: 30vh;
+    width: 30ch;
+}
+#bac2{
+    background-image: url(content/img/london.jpg);
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-size: cover; 
+    height: 30vh;
+    width: 30ch;
+}
+#bts1{
+    background-image: url(content/img/lacol.jpg);
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover; 
+    height: 30vh;
+    width: 30ch;
+}
+#suite1{
+    background-image: url(content/img/licencepro.jpg);
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover; 
+    height: 30vh;
+    width: 30ch;
+}
+#suite2{
+    background-image: url(content/img/ecoledinge.jpg);
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover; 
+    height: 30vh;
+    width: 30ch;
+}
+.all-content{
+    display: flex;
+    flex-direction: column;
+    width: 30ch;
+}
+.content-group{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+.content-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #000000ba;
+    border-radius: 0 0 10px 10px;
+}
+.studies-bouttons button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: transparent;
+    }
+.studies-bouttons button:hover{
+    background-color: #fe0101;
+}
+.studies-bouttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.studies-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+.content-text p{
+    text-align: center;
+}
+.hobbies{
+    height: 100vh;
+    background-image: url(content/img/hobbiesbg.png);
+    background-repeat: no-repeat;          
+    background-size: cover;                
+    background-position: center; 
+}
+.contact{
+    height: 75vh;
+    background-image: url(content/img/footerbg.png);
+    background-repeat: no-repeat;           
+    background-size: cover;                
+    background-position: center; 
+}
+.hobbies h2{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    font-size: 90px;
+}
+p{
+    font-family: Roboto;
+}
+.tableau-head h3{
+    font-size: 2em;
+}
+.hobbies-content{
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+}
+.hobbies article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 30vh;
+    background-repeat: no-repeat;           
+    background-size: cover;                
+    background-position: center; 
+}
+#article1{
+    border-radius: 20px 0 0 20px;
+    background-image: url(content/img/tonystark.webp);
+}
+#article2{
+    background-image: url(content/img/pragrammation.jpg);
+}
+#article3{
+    background-image: url(content/img/traviscott.jpg);
+}
+#article4{
+    background-image: url(content/img/jett.jpg);
+}
+#article5{
+    border-radius: 0 20px 20px 0;
+    background-image: url(content/img/berserk.jpg);
+}
+.contact-left{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.contact-left h2{
+    display: flex;
+    color: #fe0101;
+    justify-content: center;
+    font-size: 5em;
+}
+.contact-left p{
+    color: #fe0101;
+}
+.contact-left a{
+    text-decoration: none;
+    color: #fe0101;
+}
+.contact-links{
+    display: flex;
+    flex-direction: column;
+}

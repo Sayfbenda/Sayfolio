@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* empêche la scrollbar */
+    }
+
+    /* La vidéo prend tout l'écran */
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover; /* adapte la vidéo à l’écran */
+      z-index: -1; /* passe derrière le contenu */
+    }
+
+    /* Contenu par-dessus */
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 20%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Vidéo en background -->
+  <video class="bg-video" autoplay muted loop>
+    <source src="content/vid/miles.mp4" type="video/mp4">
+    Ton navigateur ne supporte pas la vidéo.
+  </video>
+
+  <!-- Contenu par-dessus -->
+  <div class="content">
+    <h1>Bienvenue sur mon site</h1>
+    <p>Texte affiché par-dessus la vidéo.</p>
+  </div>
+</body>
+</html>
