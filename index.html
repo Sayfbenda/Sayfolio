@@ -9,6 +9,15 @@
 <body>
     <main>
         <section id="home">
+        <div id="myPopup" class="popup">
+            <div class="popup-head">
+                <span>...</span>
+                <span class="close" onclick="closePopup()">&times;</span>
+            </div>
+            <video class="bg-video" autoplay muted loop>
+                <source src="content/vid/miles.mp4" type="video/mp4">
+            </video>
+        </div>
             <header role="banner">
         <section class="home" id="pagehome">
             <nav class="header-nav">
@@ -24,7 +33,7 @@
                         <li><a href="#contact">// contact</a></li>
                     </ul>
                 </div>
-                <img class="bannerimg" src="content/img/logo.png">
+                <a href="#myPopup" onclick="openPopup()"><img class="bannerimg" src="content/img/logo.png"></a>
             </nav>
         </section>
     </header>
@@ -175,6 +184,12 @@
     function showDiv(id) {
       document.querySelectorAll(".content").forEach(div => div.classList.remove("visible"));
       document.getElementById(id).classList.add("visible");
+    }
+    function openPopup() {
+      document.getElementById("myPopup").classList.add("active");
+    }
+    function closePopup() {
+      document.getElementById("myPopup").classList.remove("active");
     }
   </script>
 </body>
