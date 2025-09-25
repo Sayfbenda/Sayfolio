@@ -317,6 +317,18 @@ p{
     display: flex;
     align-items: center;
 }
+.cvpopup-head{
+    height: 5%;
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+}
+.cvpopup-head span{
+    color: #fe0101;
+    padding-left: 10px;
+}
 .popup-head span{
     color: #fe0101;
     padding-left: 10px;
@@ -336,7 +348,31 @@ p{
       border-radius: 15px;
       box-sizing: border-box;
 }
+.cvpopup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 80vw;
+      height: 90vh;
+      background: rgba(0,0,0,0.9);
+      color: white;
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s ease;
+      border-radius: 15px;
+      box-sizing: border-box;
+      border: 1px solid white;
+}
 .popup.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, -50%) scale(1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+.cvpopup.active {
       opacity: 1;
       visibility: visible;
       transform: translate(-50%, -50%) scale(1);
@@ -358,4 +394,22 @@ p{
 }
 .black {
 	color : black;
+}
+.cv-left img{
+    height: 10vh;
+}
+.cv-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.cv-left{
+    height: 10vh;
+}
+.cv-content p{
+    color: green;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
 }

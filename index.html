@@ -18,11 +18,71 @@
                 <source src="content/vid/miles.mp4" type="video/mp4">
             </video>
         </div>
-            <header role="banner">
+    <div id="cvpopup" class="cvpopup">
+            <div class="cvpopup-head">
+                <span>...</span>
+                <span class="close" onclick="closecvPopup()">&times;</span>
+            </div>
+            <div class="cv-content">
+            <div class="cv-left">
+                <div>
+                    <p>&lt;img&gt;</p>
+                    <img src="content/img/berserk.jpg" alt="">
+                    <p>&lt;/img&gt;</p>
+                </div>
+                <div class="flex">
+                    <p>&lt;p&gt;</p>
+                    <span>BAKOURI Soufiane</span>
+                    <span>2 Rue honoré de Balzac, Rezé 44400</span>
+                    <span>0771690955</span>
+                    <p>&lt;/p&gt;</p>
+                </div>
+                <div class="flex">
+                    <p>&lt;h2&gt;</p>
+                    <h3>Compétences</h3>
+                    <p>&lt;/h2&gt;</p>
+                    <p>&lt;p&gt;</p>
+                    <span>- WEB HTML, CSS</span>
+                    <span>- Python</span>
+                    <span>- Lua</span>
+                    <span>- 3D</span>
+                    <p>&lt;p&gt;</p>
+                    <p>&lt;h2&gt;</p>
+                    <h3>Langues</h3>
+                    <p>&lt;/h2&gt;</p>
+                    <p>&lt;p&gt;</p>
+                    <span>- Français</span>
+                    <span>- Anglais</span>
+                    <span>- Allemand</span>
+                    <p>&lt;/p&gt;</p>
+                    <h3>Centres d'intérêt</h3>
+                    <p>&lt;/h2&gt;</p>
+                    <p>&lt;p&gt;</p>
+                    <span>- Films/Séries</span>
+                    <span>- Jeux vidéo</span>
+                    <span>- Musique</span>
+                    <p>&lt;/p&gt;</p>
+                </div>
+            </div>
+            <div class="cv-center">
+                <div>
+                    <p>img</p>
+                    <p>img</p>
+                </div>
+            </div>
+            <div class="cv-right">
+                <div>
+                    <p>img</p>
+                    <p>img</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    <header role="banner">
         <section class="home" id="pagehome">
             <nav class="header-nav">
                 <div class="span-nav">
-                    <span id="span-nav">Soufiane._</span>
+                    <a href="#myPopup" onclick="opencvPopup()"><span id="span-nav">Soufiane._</span></a>
                 </div>
                 <div class="li-nav">
                     <ul class="ul-nav">
@@ -33,7 +93,7 @@
                         <li><a href="#contact">// contact</a></li>
                     </ul>
                 </div>
-                <a href="#myPopup" onclick="openPopup()"><img class="bannerimg" src="content/img/logo.png"></a>
+                <a href="#cvpopup" onclick="openPopup()"><img class="bannerimg" src="content/img/logo.png"></a>
             </nav>
         </section>
     </header>
@@ -190,6 +250,12 @@
     }
     function closePopup() {
       document.getElementById("myPopup").classList.remove("active");
+    }
+    function opencvPopup() {
+      document.getElementById("cvpopup").classList.add("active");
+    }
+    function closecvPopup() {
+      document.getElementById("cvpopup").classList.remove("active");
     }
   </script>
 </body>
