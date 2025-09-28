@@ -1,78 +1,101 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    a {
-      display: inline-block;
-      margin: 20px;
-      padding: 10px 20px;
-      background: #3498db;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    /* Div cachée par défaut */
-    .popup {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      width: 50%;
-      height: 80%;
-      background: rgba(0,0,0,0.9);
-      color: white;
-      transform: translate(-50%, -50%) scale(0.8);
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.4s ease;
-      border-radius: 15px;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    /* Quand active */
-    .popup.active {
-      opacity: 1;
-      visibility: visible;
-      transform: translate(-50%, -50%) scale(1);
-    }
-
-    /* Bouton fermer */
-    .close {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      font-size: 20px;
-      cursor: pointer;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="test.css">
+  <title>Document</title>
 </head>
 <body>
-
-  <!-- Lien pour ouvrir -->
-  <a href="#" onclick="openPopup()">Ouvrir la div</a>
-
-  <!-- Div cachée -->
-  <div id="myPopup" class="popup">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <h2>Ma grande div</h2>
-    <p>Voici une div qui apparaît en fluidité et prend 80% de l'écran.</p>
-  </div>
-
-  <script>
-    function openPopup() {
-      document.getElementById("myPopup").classList.add("active");
-    }
-    function closePopup() {
-      document.getElementById("myPopup").classList.remove("active");
-    }
-  </script>
-
+  <section>
+    <article>
+      <div>
+        <p>&lt;img&gt;</p>
+        <img src="content/img/berserk.jpg" alt="">
+        <p>&lt;/img&gt;</p>
+      </div>
+      <div>
+        <p>Langues = {</p>
+        <p>
+          <span class="caracter">"Français"</span> : <span class="caracter">"C2"</span>,<br>
+          <span class="caracter">"Anglais"</span> : <span class="caracter">"B2"</span>,<br>
+          <span class="caracter">"Allemand"</span> : <span class="caracter">"B1"</span>
+        </p>
+        <p>}</p>
+      </div>
+      <div>
+        <p>Maîtrise = [</p>
+        <p>
+          <span class="caracter">"HTML"</span>, <span class="caracter">"CSS"</span>, <span class="caracter">"Javascript"</span>,<br>
+          <span class="caracter">"Python"</span>,<br>
+          <span class="caracter">"Lua"</span>, <br>
+          <span class="caracter">"Windows"</span>,<br>
+          <span class="caracter">"Blender"</span><br>
+        </p>
+        <p>]</p>
+      </div>
+            <div>
+        <p>Contact = {</p>
+        <p>
+          "Github" :<br>
+          <p class="green">#https://github.com/Sayfbenda</p>,<br>
+          "Linkdin" : <br>
+          <p class="green">
+          #https://www.linkedin.com/in/ <br>
+          #soufiane-bakouri-810874357,<br>
+          </p>
+          "Mail" : <br>
+          <p class="green">#soufiane.bakouri.dev@gmail.com</p>
+        </p>
+        <p>}</p>
+      </div>
+      <div>
+        <p>Profil = [</p>
+        <p>
+          "Ambitieux",<br>
+          "Curieux",<br>
+          "Ponctuel",<br>
+          "Rigureux",<br>
+          "Social"
+        </p>
+        <p>]</p>
+      </div>
+    </article>
+    <article>
+      <div id="noneborder">
+        <p class="green">#Recherche d'un stage en programmation, je voudrai avoir le maximum d'expérience dans tout les languages.</p>
+      </div>
+      <div>
+        <p>Information = {</p>
+        <p>
+          Nom : "BAKOURI",<br>
+          Prenom : "Soufiane",<br>
+          DateDeNaissance : "06/11/2007",<br>
+          NUMERO : 07 71 69 09 55,<br>
+          ADRESSE : "2 Rue honoré de Balzac, 44400, Rezé",<br>
+        </p>
+        <p>}</p>
+      </div>
+      <div>
+        <p>Formation = {</p>
+        <p>
+          Bac : "Bac Sti2d option SIN",<br>
+          BTS : "BTS SIO option Slam",<span class="green">#Actuellement</span>
+        </p>
+        <p>}</p>
+      </div>
+      <div>
+        <p>Divers = "Je suis quelqu’un d’ambitieux et motivé pour apprendre toute tâche me sera bénéfique afin de me développer dans le milieu de l’informatique. J’apprends rapidement grâce à mon sens de la coopération et mon esprit d’équipe."</p>
+      </div>
+      <div>
+        <p>ProjetsPersonnels = [</p>
+        <p>
+          "https://sayfbenda.github.io/Sayfolio/",<br>
+          "https://sayfbenda.github.io/Sresiser/"
+        </p>
+        <p>]</p>
+      </div>
+    </article>
+  </section>
 </body>
 </html>
